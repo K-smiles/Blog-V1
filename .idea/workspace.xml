@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89718250-76b1-4932-bc1d-9344e0f7d5b2" name="Changes" comment="ADD NEW PROJECT">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/ArticleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/filter/AdminFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/MainCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Pager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/CategoryEditServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/CategoryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/ImgServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PosteditServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PostlistServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/utils/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="89718250-76b1-4932-bc1d-9344e0f7d5b2" name="Changes" comment="FINISH BACKEND" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671863477683</updated>
-      <workItem from="1671863478801" duration="14687000" />
+      <workItem from="1671863478801" duration="15179000" />
     </task>
     <task id="LOCAL-00001" summary="ADD NEW PROJECT">
       <created>1671865569428</created>
@@ -163,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671865569428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FINISH BACKEND">
+      <created>1671887834988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671887834988</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FINISH BACKEND">
+      <created>1671887888317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671887888317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD NEW PROJECT" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD NEW PROJECT" />
+    <MESSAGE value="FINISH BACKEND" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINISH BACKEND" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
