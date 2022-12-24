@@ -4,22 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89718250-76b1-4932-bc1d-9344e0f7d5b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="89718250-76b1-4932-bc1d-9344e0f7d5b2" name="Changes" comment="ADD NEW PROJECT">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/ArticleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/filter/AdminFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/MainCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Pager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/CategoryEditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/CategoryServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/ImgServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PosteditServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PostlistServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/utils/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -40,10 +63,89 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JavaCode/Blog-V1/src/main/java/com/chelu",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaCode\Blog-V1\src\main\java\com\chelu" />
+      <recent name="E:\JavaCode\Blog-V1\src\main\java\com\chelu\pojo" />
+      <recent name="E:\JavaCode\Blog-V1\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CategoryDao">
+    <configuration name="ArticleDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chelu.dao.ArticleDao" />
+      <module name="Blog-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chelu.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chelu.dao.CategoryDao" />
+      <module name="Blog-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chelu.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chelu.utils.JdbcUtil" />
+      <module name="Blog-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chelu.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chelu.dao.UserDao" />
+      <module name="Blog-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chelu.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CategoryDao" />
+        <item itemvalue="Application.UserDao" />
+        <item itemvalue="Application.ArticleDao" />
+        <item itemvalue="Application.JdbcUtil" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,11 +154,39 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671863477683</updated>
-      <workItem from="1671863478801" duration="2056000" />
+      <workItem from="1671863478801" duration="14687000" />
     </task>
+    <task id="LOCAL-00001" summary="ADD NEW PROJECT">
+      <created>1671865569428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671865569428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADD NEW PROJECT" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD NEW PROJECT" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chelu/dao/UserDao.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Blog_V1$ArticleDao.ic" NAME="ArticleDao Coverage Results" MODIFIED="1671878061459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.chelu.dao.*</FILTER>
+    </SUITE>
   </component>
 </project>
