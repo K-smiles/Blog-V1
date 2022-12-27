@@ -1,6 +1,9 @@
 package com.chelu.pojo;
 
+import com.chelu.utils.DateParse;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -8,8 +11,7 @@ public class Article {
     private int id;
     private String title;
     private String mdContent;
-    private String htmlContent;
-    private String createDate;
+    private Date createDate;
     private int mainId;
     private String mname;
     private int top;
@@ -17,11 +19,10 @@ public class Article {
     public Article() {
     }
 
-    public Article(int id, String title, String mdContent, String htmlContent, String createDate, int mainId, String mname, int top) {
+    public Article(int id, String title, String mdContent, Date createDate, int mainId, String mname, int top) {
         this.id = id;
         this.title = title;
         this.mdContent = mdContent;
-        this.htmlContent = htmlContent;
         this.createDate = createDate;
         this.mainId = mainId;
         this.mname = mname;
@@ -32,8 +33,7 @@ public class Article {
         this.id = (int) map.get("ID");
         this.title = (String) map.get("TITLE");
         this.mdContent = (String) map.get("MD_CONTENT");
-        this.htmlContent = (String) map.get("HTML_CONTENT");
-        this.createDate = (String) map.get("CREATE_DATE");
+        this.createDate = DateParse.parseDate((String) map.get("CREATE_DATE"));
         this.mainId = (int) map.get("MAIN_ID");
         this.mname = (String) map.get("mname");
         this.top = (int) map.get("TOP");
@@ -63,19 +63,11 @@ public class Article {
         this.mdContent = mdContent;
     }
 
-    public String getHtmlContent() {
-        return htmlContent;
-    }
-
-    public void setHtmlContent(String htmlContent) {
-        this.htmlContent = htmlContent;
-    }
-
-    public String getCreateDate() {
+    public Date getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(String createDate) {
+    public void setCreateDate(Date createDate) {
         this.createDate = createDate;
     }
 
@@ -110,7 +102,6 @@ public class Article {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", mdContent='" + mdContent + '\'' +
-                ", htmlContent='" + htmlContent + '\'' +
                 ", createDate='" + createDate + '\'' +
                 ", mainId=" + mainId +
                 ", mname='" + mname + '\'' +
@@ -122,7 +113,6 @@ public class Article {
         List list = new ArrayList();
         list.add(title);
         list.add(mdContent);
-        list.add(htmlContent);
         list.add(createDate);
         list.add(mainId);
         list.add(top);

@@ -6,19 +6,18 @@ import java.util.Map;
 public class MainCategory {
     private int id;
     private String name;
-    private Number main_count;
     public MainCategory() {}
 
-    public MainCategory(int id, String name, Number main_count) {
+    public MainCategory(int id, String name) {
         this.id = id;
         this.name = name;
-        this.main_count = main_count;
+
     }
 
     public MainCategory(Map<String, Object> map){
-        this.id = (int)map.get("id");
-        this.name = (String)map.get("name");
-        this.main_count = (Number)map.get("main_count");
+        this.id = (int)map.get("ID");
+        this.name = (String)map.get("NAME");
+
     }
 
     public int getId() {
@@ -37,13 +36,7 @@ public class MainCategory {
         this.name = name;
     }
 
-    public Number getMain_count() {
-        return main_count;
-    }
 
-    public void setMain_count(int main_count) {
-        this.main_count = main_count;
-    }
 
 
     @Override
@@ -51,7 +44,6 @@ public class MainCategory {
         return "MainCategory{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", main_count=" + main_count +
                 '}';
     }
 }

@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
         if((userservice.VerifyUser(username,password))&&(re.equals(answer))) {
             HttpSession session = request.getSession();
             session.setAttribute("username",username);
-            session.setMaxInactiveInterval(3*60);
+            session.setMaxInactiveInterval(60*60);
             response.sendRedirect("PostlistServlet?role=1");
         }
         else

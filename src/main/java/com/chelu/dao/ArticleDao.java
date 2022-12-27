@@ -56,13 +56,14 @@ public class ArticleDao {
             Map<String, Object> countMap = countResult.get(0);
             int totalRecord = ((Number) countMap.get("totalRecord")).intValue();
             // 获取查询的文章记录
-            List<Map<String, Object>> studentResult = jdbcUtil.findResult(sql.toString(), paramList);
-            if (studentResult != null) {
-                for (Map<String, Object> map : studentResult) {
+            List<Map<String, Object>> articleList = jdbcUtil.findResult(sql.toString(), paramList);
+            if (articleList != null) {
+                for (Map<String, Object> map : articleList) {
                     Article s = new Article(map);
                     studentList.add(s);
                 }
             }
+
             //获取总页数
             int totalPage = totalRecord / pageSize;
             if (totalRecord % pageSize != 0) {
@@ -87,7 +88,7 @@ public class ArticleDao {
      */
     public boolean addArticle(Article article) {
         boolean result = false;
-        StringBuilder sql = new StringBuilder("insert into article(title,md_content,html_content," +
+        StringBuilder sql = new StringBuilder("insert into article(title,md_content," +
                             "create_date,main_id,top) values(?,?,?,?,?,?);");
 
         JdbcUtil jdbcUtil = null;
@@ -108,7 +109,7 @@ public class ArticleDao {
      */
     public boolean updateArticle(Article article,int id) {
         boolean result = false;
-        StringBuilder sql = new StringBuilder("update article set title = ?,md_content = ?,html_content = ?," +
+        StringBuilder sql = new StringBuilder("update article set title = ?,md_content = ?," +
                     "create_date = ?,main_id = ?,top = ?  where id = ? ");
 
         JdbcUtil jdbcUtil = null;
@@ -145,13 +146,5 @@ public class ArticleDao {
         return result;
     }
 
-    public static void main(String[] args) {
-        ArticleDao articleDao = new ArticleDao();
-        Article article = new Article();
-        article.setMainId(1);
-        article.setTitle("t123t");
-        article.setCreateDate("1999-01-02");
-        article.setHtmlContent("1");
-        System.out.println(articleDao.deleteArticle(3));
-    }
+
 }

@@ -28,27 +28,22 @@ public class CategoryEditServlet extends HttpServlet {
 
 
         } else {
-            int main_id = 0;
-            if (request.getParameter("maincategory")!=null)
-                main_id = Integer.parseInt(request.getParameter("maincategory")); //没有主分类为0
-
-            mainCategory = new MainCategory();
+            mainCategory = new MainCategory(0,null);
             if (action.equals("add")){
-
-                    mainCategory.setName(request.getParameter("subcategory"));
+                String mainName = request.getParameter("maincategory");
+                mainCategory.setName(mainName);
                     result = new CategoryService().addMainCategory(mainCategory);
 
             }else if (action.equals("update")){
-
-                    mainCategory.setName(request.getParameter("maincategoryname"));
-                    mainCategory.setId(Integer.parseInt(request.getParameter("main_id")));
-                    result = new CategoryService().updateMainCategory(mainCategory);
+                mainCategory.setName(request.getParameter("maincategoryname"));
+                mainCategory.setId(Integer.parseInt(request.getParameter("main_id")));
+                result = new CategoryService().updateMainCategory(mainCategory);
 
             }
             if (result)
-                request.getRequestDispatcher(request.getContextPath() + "/success.jsp").forward(request, response);
+                request.getRequestDispatcher("/success.jsp").forward(request, response);
             else
-                request.getRequestDispatcher(request.getContextPath() + "/error.jsp").forward(request, response);
+                request.getRequestDispatcher( "/error.jsp").forward(request, response);
         }
     }
 

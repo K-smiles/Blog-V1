@@ -27,7 +27,7 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
         int pageNum = 1;
         int pageSize = 10;
         int main_id = 0;
-        int sub_id = 0;
+
         int id = 0;
         // 接收request里的参数
         String role = request.getParameter("role");
@@ -35,9 +35,7 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
         Article searchModel = new Article();
         if (request.getParameter("main_id")!=null)
             main_id = Integer.parseInt(request.getParameter("main_id"));
-        if (request.getParameter("sub_id")!=null)
-            sub_id = Integer.parseInt(request.getParameter("sub_id"));
-//        System.out.println(main_id+"----------"+sub_id);
+
         if (main_id!=0) //分类
             searchModel.setMainId(Integer.parseInt(request.getParameter("main_id")));
 
@@ -47,10 +45,9 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
             pageNum = Integer.parseInt(request.getParameter("pageNum")); //显示第几页数据
         if (request.getParameter("pageSize")!=null)
             pageSize = Integer.parseInt(request.getParameter("pageSize"));  // 每页显示多少条记录
-//        System.out.println(searchModel.toString());
         //调用service 获取查询结果
         Pager<Article> result = articleService.findArticle(searchModel, pageNum, pageSize);
-        List<MainCategory> mainCategory = categoryService.getCategory(new MainCategory(0,null,0));
+        List<MainCategory> mainCategory = categoryService.getCategory(new MainCategory(0,null));
         // 返回结果到页面
         request.setAttribute("result", result);
         request.setAttribute("mainCategory", mainCategory);
@@ -69,6 +66,7 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
         else if (role.equals("2"))
             request.getRequestDispatcher("/article.jsp").forward(request, response);
         else if (role.equals("3"))
+//            response.sendRedirect(request.getContextPath()+"/admin/test.jsp");
             request.getRequestDispatcher("/admin/updatepost.jsp").forward(request, response);
         else if (role.equals("4"))
             request.getRequestDispatcher("/project.jsp").forward(request, response);

@@ -2,6 +2,7 @@ package com.chelu.servlet;
 
 import com.chelu.pojo.Article;
 import com.chelu.service.ArticleService;
+import com.chelu.utils.DateParse;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,16 +31,12 @@ public class PosteditServlet extends HttpServlet {
             article = new Article();
             article.setTitle(request.getParameter("title"));
             article.setMdContent(request.getParameter("test-editormd-markdown-doc"));
-            article.setHtmlContent(request.getParameter("text"));
+
             int top = request.getParameter("top") == null ? 0 : 1;
             article.setTop(top);
-            String year = request.getParameter("year");
-            String month = request.getParameter("month");
-            String day = request.getParameter("day");
-            String hour = request.getParameter("hour");
-            String minute = request.getParameter("minute");
-            String createdate = year + "-" + month + "-" + day + " " + hour + ":" + minute;
-            article.setCreateDate(createdate);
+
+            String createDate =  request.getParameter("timeDate");
+            article.setCreateDate(DateParse.parseDate(createDate));
 
             article.setMainId(Integer.parseInt(request.getParameter("main_id")));
 
@@ -47,15 +44,15 @@ public class PosteditServlet extends HttpServlet {
                 id = Integer.parseInt(request.getParameter("id"));
             if (action.equals("add")) {
                 if (articleService.addArticle(article) == true) {
-                    request.getRequestDispatcher(request.getContextPath() + "/success.jsp").forward(request, response);
+                    request.getRequestDispatcher("/success.jsp").forward(request, response);
                 } else {
-                    request.getRequestDispatcher(request.getContextPath() + "/error.jsp").forward(request, response);
+                    request.getRequestDispatcher("/error.jsp").forward(request, response);
                 }
             } else if (action.equals("update")) {
                 if (articleService.updateArticle(article, id) == true) {
-                    request.getRequestDispatcher(request.getContextPath() + "/success.jsp").forward(request, response);
+                    request.getRequestDispatcher( "/success.jsp").forward(request, response);
                 } else {
-                    request.getRequestDispatcher(request.getContextPath() + "/error.jsp").forward(request, response);
+                    request.getRequestDispatcher( "/error.jsp").forward(request, response);
                 }
             }
         }

@@ -27,12 +27,23 @@ public class CategoryServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
-        ajaxMain(request, response);
+        if (request.getParameter("action").equals("getall"))
+        {
+            List<MainCategory> result = categoryService.getCategory(new MainCategory(0,null));
+            request.setAttribute("mainCategory",result);
+            request.getRequestDispatcher("/admin/category.jsp").forward(request,response);
+
+
+        }else
+        {
+            ajaxMain(request, response);
+        }
+
 
     }
 
     private void ajaxMain(HttpServletRequest request, HttpServletResponse response) {
-        List<MainCategory> result = categoryService.getCategory(new MainCategory(0,null,0));
+        List<MainCategory> result = categoryService.getCategory(new MainCategory(0,null));
         Map<Integer, String> mainMap = new HashMap<Integer, String>();
         Gson gson = new Gson();
         for (MainCategory item : result)
@@ -49,6 +60,7 @@ public class CategoryServlet extends HttpServlet {
             pw.close();
         }
     }
+
 
 
 }
