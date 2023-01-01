@@ -20,7 +20,4 @@ Login (Verification code), Write an article (markdown), Modify an article ,Delet
 
 ## background preview
 
-![image-20230101233311827](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20230101233311827.png)
-
-![image-20230101233434819](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20230101233434819.png)
 
