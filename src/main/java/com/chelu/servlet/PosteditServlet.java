@@ -42,6 +42,7 @@ public class PosteditServlet extends HttpServlet {
 
             if(request.getParameter("id")!=null)
                 id = Integer.parseInt(request.getParameter("id"));
+            System.out.println(article);
             if (action.equals("add")) {
                 if (articleService.addArticle(article) == true) {
                     request.getRequestDispatcher("/success.jsp").forward(request, response);

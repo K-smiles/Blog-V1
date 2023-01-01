@@ -11,8 +11,9 @@
     %>
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           name="viewport">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
+    <meta name="description" content="K-smiles" />
+    <link rel="shortcut icon" href="img/website.svg"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/manage.css"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/font-awesome.min.css">

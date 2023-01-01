@@ -57,7 +57,6 @@
         <servlet-name>ImgServlet</servlet-name>
         <url-pattern>/servlet/ImgServlet</url-pattern>
     </servlet-mapping>
-
 <!--    <filter>-->
 <!--        <filter-name>AdminFilter</filter-name>-->
 <!--        <filter-class>com.chelu.filter.AdminFilter</filter-class>-->
@@ -72,5 +71,21 @@
 <!--        <filter-name>AdminFilter</filter-name>-->
 <!--        <url-pattern>/admin/*</url-pattern>-->
 <!--        <dispatcher>REQUEST</dispatcher>-->
+<!--    </filter-mapping>-->
+
+
+
+
+<!--    <filter>-->
+<!--        <filter-name>CharacterFilter</filter-name>-->
+<!--        <filter-class>com.chelu.filter.CharacterFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>character</param-name>-->
+<!--            <param-value>utf-8</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>CharacterFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
 <!--    </filter-mapping>-->
 </web-app>

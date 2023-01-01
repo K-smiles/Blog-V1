@@ -6,15 +6,15 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>NIC|BLOG</title>
+    <title>CL|BLOG</title>
     <%
         String context = request.getContextPath();
     %>
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           name="viewport">
-    <meta name="keywords" content="倪畅,烟台大学,计算机,学生,个人主页,HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
-    <meta name="description" content="倪畅的个人主页" />
-    <link rel="shortcut icon" href="<%=context %>/img/favicon.ico"/>
+    <meta name="keywords" content="HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
+    <meta name="description" content="K-smiles" />
+    <link rel="shortcut icon" href="<%=context %>/img/website.svg"/>
     <link rel="stylesheet" href="<%=context %>/css/blog.css"/>
     <link rel="stylesheet" href="<%=context %>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<%=context %>/css/font-awesome.min.css">
@@ -103,7 +103,7 @@
     <div id="top">
         <div class="info">
             <div class="bg-title">
-                Nic's Blog
+                CL's  Blog
             </div>
             <div class="md-title">
                 DEBUG THE WORLD
@@ -111,11 +111,11 @@
         </div>
     </div>
     <div id="main">
-        <form id="postForm" method="POST" action="<%=context %>/servlet/PostlistServlet">
+
             <div class="container main-inner">
                 <div class="row">
                     <div class="article-wrap col-md-10 col-md-offset-1 col-xs-12">
-                        <c:forEach items="${result.dataList }" var="article">
+                        <c:forEach items="${result.dataList}" var="article">
                             <article class="index-article">
                                 <div class="post-info">
                                     <h2>
@@ -139,14 +139,14 @@
                     </div>
                 </div>
             </div>
-        </form>
+
     </div>
     <footer>
         <div id="block">
-            <span id="beian">鲁ICP备18011092号 · </span>
+            <span id="beian">foot</span>
             <span id="demo"></span>
         </div>
-        Copyright © 2018 nichang.site <span>托管于阿里云</span>
+        Copyright © 2022 chelu.site <span>local server</span>
     </footer>
 </div>
 </body>

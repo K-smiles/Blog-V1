@@ -25,11 +25,10 @@ public class CategoryDao {
             sql.append(" and id = ?");
             paramList.add(main_id);
         }
-        JdbcUtil jdbcUtil = null;
+
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库链接
-            List<Map<String, Object>> categoryResult = jdbcUtil.findResult(sql.toString(), paramList);
+
+            List<Map<String, Object>> categoryResult = JdbcUtil.findResult(sql.toString(), paramList);
             if (categoryResult != null) {
                 for (Map<String, Object> map : categoryResult) {
                     MainCategory s = new MainCategory(map);
@@ -39,9 +38,7 @@ public class CategoryDao {
         } catch (SQLException e) {
             throw new RuntimeException("查询所有数据异常！", e);
         } finally {
-            if (jdbcUtil != null) {
-                jdbcUtil.releaseConn(); // 释放资源
-            }
+
         }
         return result;
     }
@@ -52,13 +49,12 @@ public class CategoryDao {
         boolean result = false;
         StringBuilder sql =
                 new StringBuilder("insert into main_category(name) values(?);");
-        JdbcUtil jdbcUtil = null;
+
         List<Object> paramList = new ArrayList<Object>();
         paramList.add(mainCategory.getName());
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(), paramList);
+
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(), paramList);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -74,11 +70,10 @@ public class CategoryDao {
         List<Object> paramlist = new ArrayList<Object>();
         paramlist.add(mainCategory.getName());
         paramlist.add(mainCategory.getId());
-        JdbcUtil jdbcUtil = null;
+
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(),paramlist);
+
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(),paramlist);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -93,11 +88,10 @@ public class CategoryDao {
                 new StringBuilder("delete from main_category where id = ?;");
         List<Object> paramlist = new ArrayList<Object>();
         paramlist.add(id);
-        JdbcUtil jdbcUtil = null;
+
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(),paramlist);
+
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(),paramlist);
         } catch (SQLException e) {
             e.printStackTrace();
         }

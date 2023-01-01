@@ -59,4 +59,15 @@ public class Pager<T> {
     public void setDataList(List<Article> dataList) {
         this.dataList = dataList;
     }
+
+    @Override
+    public String toString() {
+        return "Pager{" +
+                "pageSize=" + pageSize +
+                ", currentPage=" + currentPage +
+                ", totalRecord=" + totalRecord +
+                ", totalPage=" + totalPage +
+                ", dataList=" + dataList +
+                '}';
+    }
 }

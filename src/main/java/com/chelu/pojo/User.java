@@ -2,13 +2,13 @@ package com.chelu.pojo;
 
 public class User {
     private int id;
-    private int username;
-    private int password;
+    private String username;
+    private String password;
 
     public User() {
     }
 
-    public User(int username, int password) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
     }
@@ -17,19 +17,28 @@ public class User {
         return id;
     }
 
-    public int getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(int username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username=" + username +
+                ", password=" + password +
+                '}';
     }
 }

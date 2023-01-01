@@ -6,14 +6,15 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>NIC|BLOG</title>
+    <title>cl|BLOG</title>
     <%
         String context = request.getContextPath();
     %>
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           name="viewport">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="HTML,CSS,PHP,JavaScript,jQuery,XML,AJAX,,SQL,bootstrap,Python" />
+    <meta name="description" content="K-smiles" />
+    <link rel="shortcut icon" href="<%=context %>/img/website.svg"/>
     <link rel="stylesheet" href="../css/manage.css"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">

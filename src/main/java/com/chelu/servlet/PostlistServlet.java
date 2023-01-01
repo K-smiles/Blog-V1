@@ -51,7 +51,6 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
         // 返回结果到页面
         request.setAttribute("result", result);
         request.setAttribute("mainCategory", mainCategory);
-
         if (role.equals("0"))
         {
             System.out.println(request.getContextPath());
@@ -63,8 +62,9 @@ public class PostlistServlet extends javax.servlet.http.HttpServlet {
         }
         else if(role.equals("1"))
             request.getRequestDispatcher("/admin/postlist.jsp").forward(request, response);
-        else if (role.equals("2"))
+        else if (role.equals("2")) {
             request.getRequestDispatcher("/article.jsp").forward(request, response);
+        }
         else if (role.equals("3"))
 //            response.sendRedirect(request.getContextPath()+"/admin/test.jsp");
             request.getRequestDispatcher("/admin/updatepost.jsp").forward(request, response);

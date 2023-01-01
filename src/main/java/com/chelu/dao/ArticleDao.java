@@ -47,16 +47,14 @@ public class ArticleDao {
         sql.append(" limit " + fromIndex + ", " + pageSize);
         // 存放所有查询出的文章对象
         List<Article> studentList = new ArrayList<Article>();
-        JdbcUtil jdbcUtil = null;
+
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库链接
             // 获取总记录数
-            List<Map<String, Object>> countResult = jdbcUtil.findResult(countSql.toString(), paramList);
+            List<Map<String, Object>> countResult = JdbcUtil.findResult(countSql.toString(), paramList);
             Map<String, Object> countMap = countResult.get(0);
             int totalRecord = ((Number) countMap.get("totalRecord")).intValue();
             // 获取查询的文章记录
-            List<Map<String, Object>> articleList = jdbcUtil.findResult(sql.toString(), paramList);
+            List<Map<String, Object>> articleList = JdbcUtil.findResult(sql.toString(), paramList);
             if (articleList != null) {
                 for (Map<String, Object> map : articleList) {
                     Article s = new Article(map);
@@ -75,9 +73,7 @@ public class ArticleDao {
         } catch (SQLException e) {
             throw new RuntimeException("查询所有数据异常！", e);
         } finally {
-            if (jdbcUtil != null) {
-                jdbcUtil.releaseConn(); // 释放资源
-            }
+
         }
         return result;
     }
@@ -89,13 +85,10 @@ public class ArticleDao {
     public boolean addArticle(Article article) {
         boolean result = false;
         StringBuilder sql = new StringBuilder("insert into article(title,md_content," +
-                            "create_date,main_id,top) values(?,?,?,?,?,?);");
-
-        JdbcUtil jdbcUtil = null;
+                            "create_date,main_id,top) values(?,?,?,?,?);");
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(),article.toList());
+
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(),article.toList());
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -112,13 +105,11 @@ public class ArticleDao {
         StringBuilder sql = new StringBuilder("update article set title = ?,md_content = ?," +
                     "create_date = ?,main_id = ?,top = ?  where id = ? ");
 
-        JdbcUtil jdbcUtil = null;
+
         ArrayList paramList = (ArrayList) article.toList();
         paramList.add(id);
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(),paramList);
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(),paramList);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -133,13 +124,12 @@ public class ArticleDao {
         boolean result = false;
         StringBuilder sql =
                 new StringBuilder("delete from article where id = ?;");
-        JdbcUtil jdbcUtil = null;
+
         List<Object> paramList = new ArrayList<Object>();
         paramList.add(id);
         try {
-            jdbcUtil = new JdbcUtil();
-            jdbcUtil.getConnection(); // 获取数据库连接
-            result = jdbcUtil.updateByPreparedStatement(sql.toString(),paramList);
+
+            result = JdbcUtil.updateByPreparedStatement(sql.toString(),paramList);
         } catch (SQLException e) {
             e.printStackTrace();
         }
