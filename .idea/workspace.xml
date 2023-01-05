@@ -10,58 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89718250-76b1-4932-bc1d-9344e0f7d5b2" name="Changes" comment="FINALISE BLOG PROJECT VERSION">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/filter/CharacterFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/ArticleM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/druid.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/code-block-dialog/code-block-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/emoji-dialog/emoji-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/emoji-dialog/emoji.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/goto-line-dialog/goto-line-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/help-dialog/help-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/help-dialog/help.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/html-entities-dialog/html-entities-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/html-entities-dialog/html-entities.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/image-dialog/image-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/link-dialog/link-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/plugin-template.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/preformatted-text-dialog/preformatted-text-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/reference-link-dialog/reference-link-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/table-dialog/table-dialog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/admin/editormd/plugins/test-plugin/test-plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/filter/AdminFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Pager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/Pager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PosteditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PosteditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PostlistServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/servlet/PostlistServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chelu/utils/JdbcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chelu/utils/JdbcUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/addpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/category.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/postlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/postlist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/test.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/admin/updatepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/admin/updatepost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/blog.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/blog.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/resume.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/project.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/project.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +281,8 @@
       <workItem from="1672435991762" duration="3175000" />
       <workItem from="1672531177932" duration="6821000" />
       <workItem from="1672543663133" duration="3560000" />
-      <workItem from="1672566621125" duration="1911000" />
+      <workItem from="1672566621125" duration="2808000" />
+      <workItem from="1672694698414" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="ADD NEW PROJECT">
       <created>1671865569428</created>
@@ -376,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672116803400</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FINALISE BLOG PROJECT VERSION">
+      <created>1672575656841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672575656841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

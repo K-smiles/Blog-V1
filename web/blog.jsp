@@ -115,26 +115,31 @@
             <div class="container main-inner">
                 <div class="row">
                     <div class="article-wrap col-md-10 col-md-offset-1 col-xs-12">
-                        <c:forEach items="${result.dataList}" var="article">
-                            <article class="index-article">
-                                <div class="post-info">
-                                    <h2>
-                                        <a href="<%=context %>/servlet/PostlistServlet?role=2&id=${article.id}">${article.title }</a>
-                                    </h2>
-                                    <div class="post-detial">
-                                        <span>${(article.createDate)}</span>
+                        <form class="form-horizontal form-inline" action="<%=context %>/servlet/PostlistServlet?role=1"
+                              method="post" id="postForm">
+                            <c:forEach items="${result.dataList}" var="article">
+                                <article class="index-article">
+                                    <div class="post-info">
+                                        <h2>
+                                            <a href="<%=context %>/servlet/PostlistServlet?role=2&id=${article.id}">${article.title }</a>
+                                        </h2>
+                                        <div class="post-detial">
+                                            <span>${(article.createDate)}</span>
+                                        </div>
+                                        <p>
+                                                ${fn:substring(article.mdContent,0,10)}</p>
                                     </div>
-                                    <p>
-                                       ${fn:substring(article.mdContent,0,10)}</p>
-                                </div>
 
-                                <center>
-                                    <button class="more"><a
-                                            href="<%=context %>/servlet/PostlistServlet?role=2&id=${article.id}"
-                                            style="color: #000;">Read More</a></button>
-                                </center>
-                            </article>
-                        </c:forEach>
+                                    <center>
+                                        <button class="more"><a
+                                                href="<%=context %>/servlet/PostlistServlet?role=2&id=${article.id}"
+                                                style="color: #000;">Read More</a></button>
+                                    </center>
+                                </article>
+                            </c:forEach>
+                        </form>
+
+
                         <div id="News-Pagination" ></div>
                     </div>
                 </div>
